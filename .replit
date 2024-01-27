@@ -1,0 +1,9 @@
+entrypoint = "main.dart"
+modules = ["dart-3.0:v1-20230623-0b7a606", "nodejs-20:v8-20230920-bd784b9"]
+
+[nix]
+channel="stable-23_05"
+
+[deployment]
+run = ["dart", "main.dart"]
+deploymentTarget = "cloudrun"
